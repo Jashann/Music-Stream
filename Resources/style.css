@@ -2,6 +2,7 @@
 body{
     color: #fff;
     overflow-x: hidden;
+    scroll-behaviour: smooth;
 }
 nav,section,footer{
     width: 100vw;
