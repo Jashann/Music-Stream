@@ -1,76 +1,88 @@
 /* Universal styles */
-body{
-    color: #fff;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    font-family: 'Raleway';
+body {
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Raleway";
 }
-nav,section,footer{
-    width: 100vw;
+nav,
+section,
+footer {
+  width: 100vw;
 }
 /* For Video Background */
-body > * > *{
-    position: relative;
-    top: 0;
-    left: 0;
-    content: "";
-    z-index: 2;
+body > * > * {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
 }
-video{ 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    opacity: 0.4;
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
 }
-.set-bg{
-    position: relative;
-    top: 0;
-    left: 0;
-    content: "";
-    z-index: 2;
+.set-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
 }
-.z-0{
-    position: relative;
-    top: 0;
-    left: 0;
-    content: "";
-    z-index: 0;
+.z-0 {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 0;
 }
 /* End of Video Background */
 /* Individual Styles */
-.navbar-brand img{
-    height: 50px;
-    width: auto;
+.navbar-brand img {
+  height: 50px;
+  width: auto;
 }
-#showcase{
-    background: linear-gradient(to right, #ac5c01, #00588f);/* This still has effect as an overlay */
+#showcase {
+  background: linear-gradient(
+    to right,
+    #ac5c01,
+    #00588f
+  ); /* This still has effect as an overlay */
 }
-.size-180px{
-    width: 180px;
-    height: 180px;
+.size-180px {
+  width: 180px;
+  height: 180px;
 }
-footer{
-    background: #000;
+footer {
+  background: #000;
 }
-#rights{
-    width: 90%;
-    margin: auto;
+#rights {
+  width: 90%;
+  margin: auto;
 }
 
-@media screen and (max-width:768px){
-    #premium{
-        text-align: center;
-    }
-    footer .row > *{
-        margin-bottom: 2rem;
-    }
-    #social i{
-        margin-bottom: 1rem;
-    }
+@media screen and (max-width: 768px) {
+  #premium {
+    text-align: center;
+  }
+  #premium .row > * {
+    border-bottom: 1px solid #fff;
+  }
+  #premium .row > *:last-child {
+    border-bottom: none;
+  }
+  footer .row > * {
+    margin-bottom: 2rem;
+  }
+  #social i {
+    margin-bottom: 1rem;
+  }
 }
